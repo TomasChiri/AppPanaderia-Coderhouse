@@ -15,9 +15,9 @@ const CartScreen = () => {
     console.log("eliminar item");
   }
 
-  const renderItem = ({item}) => {
+  const renderItem = ({item}) => (
     <CartItem item={item} onDelete={handleDeleteItem} />
-  }
+  )
 
   return (
     <View style={styles.container}>
