@@ -1,5 +1,4 @@
 import { StyleSheet, View, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from "@expo/vector-icons/Ionicons";
 import ShopNavigator from "./ShopNavigator";
@@ -10,7 +9,6 @@ const BottomTabs = createBottomTabNavigator();
 
 export default BottomTabNavigator = () => {
   return (
-    <NavigationContainer> 
         <BottomTabs.Navigator 
             initialRouteName='ShopTab'
             screenOptions={{
@@ -43,7 +41,6 @@ export default BottomTabNavigator = () => {
                 )
             }}/>
         </BottomTabs.Navigator>
-    </NavigationContainer>
   );
 }
 
